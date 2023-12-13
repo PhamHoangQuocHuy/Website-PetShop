@@ -1,6 +1,6 @@
 <p>THÊM SẢN PHẨM</p>
 <table border="1" width="100%" style="border-collapse: collapse;">
-    <form method="POST" action="modules/quanlysp/xuly.php">
+    <form method="POST" action="modules/quanlysp/xuly.php" enctype="multipart/form-data">
         <tr>
             <td>MÃ SẢN PHẨM</td>
             <td><input type="text" name="masanpham"></td>

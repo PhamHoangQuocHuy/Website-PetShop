@@ -1,31 +1,52 @@
 <?php
-$sql_lietke_danhmucsp = "SELECT *FROM tbl_danhmuc ORDER BY thutu ASC";
-$query_lietke_danhmucsp = mysqli_query($mysqli, $sql_lietke_danhmucsp);
+$sql_lietke_sp = "SELECT *FROM tbl_sanpham ORDER BY id_sanpham ASC";
+$query_lietke_sp = mysqli_query($mysqli, $sql_lietke_sp);
 ?>
-<p>Liệt kê danh mục sản phẩm</p>
+<p>Liệt kê sản phẩm</p>
 <table style="width: 100%" border="1" style="border-collapse: collapse;">
 
     <tr>
         <th>ID</th>
-        <th>TÊN DANH MỤC</th>
+        <th>TÊN SẢN PHẨM</th>
+        <th>HÌNH ẢNH</th>
+        <th>GIÁ</th>
+        <th>SỐ LƯỢNG</th>
+        <th>MÃ SP</th>
+        <th>TÓM TẮT</th>
+        <th>TRẠNG THÁI</th>
         <th>QUẢN LÝ</th>
     </tr>
 
     <?php
     $i = 0;
-    while ($row = mysqli_fetch_array($query_lietke_danhmucsp)) {
+    while ($row = mysqli_fetch_array($query_lietke_sp)) {
         $i++;
-    
+
     ?>
 
-    <tr>
-        <td><?php echo $i ?></td>
-        <td><?php echo $row['tendanhmuc'] ?></td>
-        <td>
-            <a href="modules/quanlydanhmucsanpham/xuly.php?iddanhmuc=<?php echo $row['id_danhmuc'] ?>">XÓA</a> | 
-            <a href="?action=quanlydanhmucsanpham&query=sua&iddanhmuc=<?php echo $row['id_danhmuc'] ?>">SỬA</a>
-        </td>
-    </tr>
+        <tr>
+            <td><?php echo $i ?></td>
+            <td><?php echo $row['tensanpham'] ?></td>
+            <td><img src="modules/quanlysp/uploads/<?php echo $row['hinhanh'] ?>" width="150px"> </td>
+            <td><?php echo $row['gia'] ?></td>
+            <td><?php echo $row['soluong'] ?></td>
+            <td><?php echo $row['masanpham'] ?></td>
+            <td><?php echo $row['tomtat'] ?></td>
+            <td><?php if ($row['tinhtrang'] == 1) {
+                    echo 'KÍCH HOẠT';
+                } else {
+                    echo 'ẨN';
+                }
+
+                ?>
+
+            </td>
+
+            <td>
+                <a href="modules/quanlysp/xuly.php?idsanpham=<?php echo $row['id_sanpham'] ?>">XÓA</a> |
+                <a href="?action=quanlysp&query=sua&idsanpham=<?php echo $row['id_sanpham'] ?>">SỬA</a>
+            </td>
+        </tr>
     <?php
     }
     ?>

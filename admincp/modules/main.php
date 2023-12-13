@@ -14,11 +14,11 @@
         include("modules/quanlydanhmucsanpham/lietke.php");
     } elseif ($tam == 'quanlydanhmucsanpham' && $query == 'sua') {
         include("modules/quanlydanhmucsanpham/sua.php");
-    } elseif ($tam == 'quanlysanpham' && $query == 'them') {
+    } elseif ($tam == 'quanlysp' && $query == 'them') {
         // quan ly sp
         include("modules/quanlysp/them.php");
         include("modules/quanlysp/lietke.php");
-    } elseif($tam == 'quanlysanpham' && $query == 'sua'){
+    } elseif($tam == 'quanlysp' && $query == 'sua'){
         include("modules/quanlysp/sua.php");
     }
     else {
