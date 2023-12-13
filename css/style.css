@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    border: 1px solid #000;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    border: 1px solid #ff80ff;
+    height: 180px;
+    width: 100%;
+}
+
+.menu {
+    border: 1px solid #1aff8c;
+    height: 50px;
+    width: 100%;
+    background-color: #00e6ac;
+}
+
+ul.list_menu {
+    padding-left: 155px;
+    margin: 0px;
+    list-style: none;
+    line-height: 10px;
+}
+
+ul.list_menu li a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+ul.list_menu li:hover {
+    background: pink;
+}
+
+ul.list_menu li {
+    float: left;
+    margin: 20px;
+    padding: 0px;
+}
+
+#main {
+    border: 1px solid #00ff80;
+    height: auto;
+    width: 100%;
+}
+
+.sidebar {
+    border: 1px solid #000066;
+    height: 385px;
+    width: 20%;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+ul.list_sidebar {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: 1px solid #000;
+    list-style: none;
+    line-height: 30px;
+}
+
+ul.list_sidebar li a {
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    display: block;
+}
+
+ul.list_sidebar li:hover {
+    background: pink;
+}
+
+ul.list_sidebar li {
+    margin: 7px;
+    padding: 5px;
+}
+
+.maincontent {
+    border: 1px solid #ff0000;
+    height: auto;
+    width: 79%;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: right;
+}
+
+ul.pet-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+ul.pet-list li {
+    width: 17%;
+    border: 2px solid wheat;
+    margin: 14px;
+    float: left;
+    background: blanchedalmond;
+}
+ul.pet-list img {
+    width: 100%;
+}
+p.title_pet {
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+p.price_pet {
+    text-align: center;
+}
+ul.pet-list li a {
+    text-decoration: none;
+}
+.footer {
+    border: 0px solid #ff1a8c;
+    height: auto;
+    width: 100%;
+    background-color: #00cc99;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+.map_footer{
+    width: 97%;
+    height: 10cm;
+    margin-left: 20px;
+    margin-top: 5px;
+    border: 2px solid #000;
+}
+.end_footer{
+    background-color: #00cc99;
+    font-size: 25px;
+    margin-bottom: 2px;
+    padding-left: 45%;
+}
+.clear {
+    clear: both;
+}
+.View_pet{
+    font-weight: bold;
+    font-size: large;
+    border: 2px #000;
+    margin-left: 45%;
+}
+.title{
+    margin-left: 45%; 
+}
+
+/* footer 3 side */
+
+
+
+
+/* CSS sign_in + regis */
+html,
+body {
+    width: 100%;
+}
+
+.box {
+    text-align: center;
+    background: #181818;
+    width: 400px;
+    height: auto;
+    padding: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 20px 0px #000;
+}
+
+.box h1 {
+    color: #fff;
+}
+
+.box input[type="password"],
+.box input[type="text"] {
+    background: none;
+    outline: none;
+    width: 210px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 0px 15px;
+    margin: 15px 0px;
+    border: solid 2px #002cff;
+    transition: 1s;
+}
+
+.box input[type="password"]:focus,
+.box input[type="text"]:focus {
+    width: 320px;
+    border-color: chartreuse;
+    transition: 1s;
+}
+
+.box input[type="submit"] {
+    background: none;
+    outline: none;
+    width: 160px;
+    height: 40px;
+    border-radius: 40px;
+    margin: 15px 0px;
+    border: solid 2px #002cff;
+    color: #fff;
+    font-size: 18px;
+    transition: 1s;
+}
+
+.box input[type="submit"]:hover {
+    background: #002cff;
+    transition: 1s;
+}

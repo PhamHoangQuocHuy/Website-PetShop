@@ -1,0 +1,1 @@
+<p>FOOTER ADMINCP</p>
