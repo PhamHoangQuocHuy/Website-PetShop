@@ -8,7 +8,7 @@ $query_sua_sp = mysqli_query($mysqli, $sql_sua_sp);
     <?php
     while ($row = mysqli_fetch_array($query_sua_sp)) {
     ?>
-        <form method="POST" action="modules/quanlysp/xuly.php?idsanpham=<?php echo $_row['id_sanpham'] ?>" enctype="multipart/form-data">
+        <form clas method="POST" action="modules/quanlysp/xuly.php?idsanpham=<?php echo $row['id_sanpham'] ?>" enctype="multipart/form-data">
             <tr>
                 <td>MÃ SẢN PHẨM</td>
                 <td><input type="text" value="<?php echo $row['masanpham'] ?>" name="masanpham"></td>

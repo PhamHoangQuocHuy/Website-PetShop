@@ -27,11 +27,13 @@ if (isset($_POST['themsanpham'])) {
     //sua
     if ($hinhanh != '') {
         move_uploaded_file($hinhanh_tmp, 'uploads/' . $hinhanh);
+
         $sql = "SELECT * FROM tbl_sanpham WHERE id_sanpham = '$_GET[idsanpham]' LIMIT 1 ";
         $query = mysqli_query($mysqli, $sql);
         while ($row = mysqli_fetch_array($query)) {
             unlink('uploads/' . $row['hinhanh']);
         }
+
 
         $sql_update = "UPDATE tbl_sanpham SET masanpham ='" . $masanpham . "',tensanpham='" . $tensanpham . "', gia ='" . $gia . "',soluong ='" . $soluong . "',
     hinhanh ='" . $hinhanh . "',tomtat ='" . $tomtat . "',noidung ='" . $noidung . "',tinhtrang ='" . $tinhtrang . "' WHERE id_sanpham='$_GET[idsanpham]' ";

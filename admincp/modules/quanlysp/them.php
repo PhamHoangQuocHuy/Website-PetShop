@@ -30,6 +30,23 @@
             <td><textarea rows="10" name="noidung" style="resize: none;"></textarea></td>
         </tr>
         <tr>
+            <td>DANH MỤC SẢN PHẨM</td>
+            <td>
+                <select name="tinhtrang">
+                    <?php
+                    $sql_danhmuc = "SELECT * FORM tbl_danhmuc ORDER BY id_danhmuc DESC";
+                    $query_danhmuc = mysqli_query($mysqli, $sql_danhmuc) or die( mysqli_error($mysqli));
+                    while ($row_danhmuc = mysqli_fetch_array($query_danhmuc)) {
+                    ?>
+                        <option value="<?php echo $row_danhmuc['id_danhmuc'] ?>"><?php echo $row_danhmuc['tendanhmuc'] ?></option>
+                    <?php
+                    }
+                    ?>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
             <td>TÌNH TRẠNG</td>
             <td>
                 <select name="tinhtrang">
