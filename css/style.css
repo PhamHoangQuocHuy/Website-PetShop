@@ -9,7 +9,28 @@ body {
     width: 90%;
     margin: 0 auto;
 }
-
+.wrapper_chitiet{
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+.hinhanh_sanpham{
+    float: left;
+    width: 30%;
+}
+.chitiet_sanpham{
+    float: left;
+    width: 50%;
+    margin: 20px 20px;
+}
+input.themgiohang{
+    border: none;
+    background-color: #00ff80;
+    color: #fff;
+    padding: 12px;
+    font-size: 15px;
+    cursor: pointer;
+}
 .header {
     background-image: url(../images/banner.jpg);
     background-repeat: no-repeat;
@@ -170,8 +191,6 @@ ul.product-list li a {
 .title{
     margin-left: 45%; 
 }
-
-/* footer 3 side */
 
 
 

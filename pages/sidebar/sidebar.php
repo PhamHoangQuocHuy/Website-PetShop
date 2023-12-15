@@ -1,12 +1,14 @@
 <div class="sidebar">
     <ul class="list_sidebar">
-        <li><a href="index.php?quanly=danhmucsanpham&id=2">Thực phẩm </a></li>
-        <li><a href="index.php?quanly=danhmucsanpham&id=2">Sữa tắm</a></li>
-        <li><a href="index.php?quanly=danhmucsanpham&id=2">Giường nệm </a></li>
-        <li><a href="index.php?quanly=danhmucsanpham&id=2">Phụ kiện</a></li>
-        <li><a href="index.php?quanly=dichvu">Spa thú cưng</a></li>
-        <li><a href="index.php?quanly=dichvu">Trông giữ thú cưng</a></li>
-        <li><a href="index.php?quanly=dichvu">Phối giống</a></li>
-        <li><a href="index.php?quanly=lienhe">Tư vấn</a></li>
+        <?php
+        $sql_danhmuc = "SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc DESC";
+        $query_danhmuc = mysqli_query($mysqli, $sql_danhmuc) or die(mysqli_error($mysqli));
+        while($row = mysqli_fetch_array($query_danhmuc)){
+        ?>
+        <li><a href="index.php?quanly=danhmucsanpham&id=<?php echo $row['id_danhmuc'] ?>"><?php echo $row['tendanhmuc'] ?></a></li>
+
+        <?php
+        }
+        ?>
     </ul>
 </div>
