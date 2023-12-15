@@ -13,10 +13,8 @@
             include("main/gioithieu.php");
         }elseif($tam=='giohang'){
             include("main/giohang.php");
-        }elseif($tam=='thucung'){
-            include("main/thucung.php");
-        }elseif($tam=='sanpham'){
-            include("main/sanpham.php");
+        }elseif($tam=='danhmucsanpham'){
+            include("main/danhmuc.php");
         }elseif($tam=='dichvu'){
             include("main/dichvu.php");
         }elseif($tam=='tintuc'){

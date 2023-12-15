@@ -98,33 +98,33 @@ ul.list_sidebar li {
     float: right;
 }
 
-ul.pet-list {
+ul.product-list {
     padding: 0;
     margin: 0;
     list-style: none;
     width: 100%;
 }
 
-ul.pet-list li {
+ul.product-list li {
     width: 17%;
     border: 2px solid wheat;
     margin: 14px;
     float: left;
     background: blanchedalmond;
 }
-ul.pet-list img {
+ul.product-list img {
     width: 100%;
 }
-p.title_pet {
+p.title_product {
     text-align: center;
     color: #000;
     font-size: 16px;
     font-weight: bold;
 }
-p.price_pet {
+p.price_product {
     text-align: center;
 }
-ul.pet-list li a {
+ul.product-list li a {
     text-decoration: none;
 }
 .footer {
@@ -156,7 +156,7 @@ ul.pet-list li a {
 .clear {
     clear: both;
 }
-.View_pet{
+.View_product{
     font-weight: bold;
     font-size: large;
     border: 2px #000;

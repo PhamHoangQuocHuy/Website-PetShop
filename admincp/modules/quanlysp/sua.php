@@ -40,6 +40,31 @@ $query_sua_sp = mysqli_query($mysqli, $sql_sua_sp);
                 <td>NỘI DUNG</td>
                 <td><textarea rows="10" name="noidung" style="resize: none;"><?php echo $row['noidung'] ?></textarea></td>
             </tr>
+
+            <tr>
+                <td>DANH MỤC SẢN PHẨM</td>
+                <td>
+                    <select name="danhmuc">
+                        <?php
+                        $sql_danhmuc = "SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc DESC";
+                        $query_danhmuc = mysqli_query($mysqli, $sql_danhmuc) or die(mysqli_error($mysqli));
+                        while ($row_danhmuc = mysqli_fetch_array($query_danhmuc)) {
+                            if ($row_danhmuc['id_danhmuc'] == $row_danhmuc['id_danhmuc']) {
+                        ?>
+                                <option selected value="<?php echo $row_danhmuc['id_danhmuc'] ?>"><?php echo $row_danhmuc['tendanhmuc'] ?></option>
+                            <?php
+                            } else {
+                            ?>
+                                <option selected value="<?php echo $row_danhmuc['id_danhmuc'] ?>"><?php echo $row_danhmuc['tendanhmuc'] ?></option>
+                        <?php
+                            }
+                        }
+                        ?>
+                    </select>
+                </td>
+            </tr>
+
+
             <tr>
                 <td>TÌNH TRẠNG</td>
                 <td>
