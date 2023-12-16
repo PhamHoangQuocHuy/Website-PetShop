@@ -10,7 +10,7 @@
             <td><input type="text" name="thutu"></td>
         </tr>
         <tr>
-            <td colspan="2"><input type="submit" name="themdanhmuc" value="THÊM DANH MỤC SẢN PHẨM"></td>
+            <td colspan="2"><input class="btn btn-success" type="submit" name="themdanhmuc" value="THÊM DANH MỤC SẢN PHẨM"></td>
         </tr>
     </form>
 </table>

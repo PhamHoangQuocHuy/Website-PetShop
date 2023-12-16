@@ -28,7 +28,7 @@ $query_lietke_sp = mysqli_query($mysqli, $sql_lietke_sp);
         <tr>
             <td><?php echo $i ?></td>
             <td><?php echo $row['tensanpham'] ?></td>
-            <td><img src="modules/quanlysp/uploads/<?php echo $row['hinhanh'] ?>" width="150px"> </td>
+            <td><img src="modules/quanlysp/uploads/<?php echo $row['hinhanh'] ?>" width="150px" height="150px"> </td>
             <td><?php echo $row['gia'] ?></td>
             <td><?php echo $row['soluong'] ?></td>
             <td><?php echo $row['tendanhmuc'] ?></td>
@@ -45,8 +45,8 @@ $query_lietke_sp = mysqli_query($mysqli, $sql_lietke_sp);
             </td>
 
             <td>
-                <a href="modules/quanlysp/xuly.php?idsanpham=<?php echo $row['id_sanpham'] ?>">XÓA</a> |
-                <a href="?action=quanlysp&query=sua&idsanpham=<?php echo $row['id_sanpham'] ?>">SỬA</a>
+                <a class="btn btn-danger" href="modules/quanlysp/xuly.php?idsanpham=<?php echo $row['id_sanpham'] ?>">XÓA</a> |
+                <a class="btn btn-info" href="?action=quanlysp&query=sua&idsanpham=<?php echo $row['id_sanpham'] ?>">SỬA</a>
             </td>
         </tr>
     <?php

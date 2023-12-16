@@ -58,7 +58,7 @@
         </tr>
 
         <tr>
-            <td colspan="2"><input type="submit" name="themsanpham" value="THÊM SẢN PHẨM"></td>
+            <td colspan="2"><input class="btn btn-success" type="submit" name="themsanpham" value="THÊM SẢN PHẨM"></td>
         </tr>
     </form>
 </table>
