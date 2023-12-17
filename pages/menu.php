@@ -18,6 +18,6 @@ $query_danhmuc = mysqli_query($mysqli, $sql_danhmuc) or die(mysqli_error($mysqli
         <li><a href="index.php?quanly=dichvu">Dịch vụ</a></li>
         <li><a href="index.php?quanly=tintuc">Tin tức</a></li>
         <li><a href="index.php?quanly=lienhe">Liên hệ</a></li>
-        <li><a href="Sign_in.php">Đăng nhập</a></li>
-        <li><a href="Regis.php">Đăng kí</a></li>
+        <li><a href="dangnhap.php">Đăng nhập</a></li>
+        <li><a href="dangky.php">Đăng kí</a></li>
 </div>
