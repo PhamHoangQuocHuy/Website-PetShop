@@ -32,16 +32,11 @@ if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
         <?php
         }
         ?>
-
-        <!-- <?php
-        if (isset($_SESSION['dangky'])) {
-        ?>
-            <li><a href="index?quanly=dangxuat=1">Đăng xuất</a></li>
-        <?php
-        } else {
-        ?>
-            <li><a href="index.php?quanly=dangky">Đăng ký</a></li>
-        <?php
-        }
-        ?> -->
+    </ul>
+    <p>
+    <form action="index.php?quanly=timkiem" method="POST">
+        <input type="text" placeholder="Tìm kiếm" name="tukhoa" style="border-radius: 30px;background-color:#B0E0E6;" >
+        <input type="submit" name="timkiem" value="Tìm kiếm" style="border-radius: 30px;">
+    </form>
+    </p>
 </div>
