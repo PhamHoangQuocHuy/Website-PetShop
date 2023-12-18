@@ -4,7 +4,7 @@ $query_danhmuc = mysqli_query($mysqli, $sql_danhmuc) or die(mysqli_error($mysqli
 ?>
 <?php
 if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
-    unset($_SESSION['dangky']);
+    unset($_SESSION['dangnhap']);
 }
 ?>
 <div class="menu">
@@ -21,20 +21,19 @@ if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
         ?>
         <li><a href="index.php?quanly=dichvu">Dịch vụ</a></li>
         <li><a href="index.php?quanly=tintuc">Tin tức</a></li>
-        <li><a href="index.php?quanly=lienhe">Liên hệ</a></li>
         <?php
         if (isset($_SESSION['dangnhap'])) {
         ?>
-            <li><a href="index?quanly=dangxuat=1">Đăng xuất</a></li>
+            <li><a href="index.php?dangxuat=1">Đăng xuất</a></li>
         <?php
         } else {
         ?>
-            <li><a href="index.php?quanly=dangnhap">Đăng nhập</a></li>
+            <li><a href="index.php?quanly=dangky">Đăng ký</a></li>
         <?php
         }
         ?>
 
-        <?php
+        <!-- <?php
         if (isset($_SESSION['dangky'])) {
         ?>
             <li><a href="index?quanly=dangxuat=1">Đăng xuất</a></li>
@@ -44,5 +43,5 @@ if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
             <li><a href="index.php?quanly=dangky">Đăng ký</a></li>
         <?php
         }
-        ?>
+        ?> -->
 </div>

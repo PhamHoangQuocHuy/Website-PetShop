@@ -9,9 +9,8 @@ if (isset($_POST['dangky'])) {
     $sql_dangky = mysqli_query($mysqli, "INSERT INTO tbl_user (name, username, password, email, diachi, dienthoai) 
         VALUE ('" . $name . "','" . $username . "','" . $password . "','" . $email . "','" . $diachi . "','" . $dienthoai . "' ) ");
     if ($sql_dangky) {
-        echo '<p style="color:green">Bạn đã đăng ký thành công </p>';
-        $_SESSION['dangky'] = $name;
-        header('Location: index.php?quanly=giohang');
+        echo '<p style="color:green">Bạn đã đăng ký thành công <i class="bi bi-check-circle-fill text-success"></i></p>';
+        echo '<p><a href="dangnhap.php">Đăng nhập vào tài khoản bạn vừa tạo</a></p>';
     } else {
         echo '<p style="color:red">Đăng kí thất bại. Lỗi:' . mysqli_error($mysqli) . ' </p>';
     }

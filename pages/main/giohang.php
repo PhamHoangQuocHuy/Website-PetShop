@@ -1,8 +1,7 @@
-
 <h3 class="title">GIỎ HÀNG</h3>
 <?php
-    if(isset($_SESSION['dangky'])){
-        echo 'Xin chào: '.'<span style="color:red">'.$_SESSION['dangky'].'</span>';
+    if(isset($_SESSION['dangnhap'])){
+        echo 'Xin chào: '.'<span style="color:red">'.$_SESSION['dangnhap'].'</span>';
     }
 ?>
 <?php
@@ -52,13 +51,13 @@ if (isset($_SESSION['cart'])) {
                 <p class="btn btn-danger" style="float: right;"><a href="pages/main/themgiohang.php?xoatatca=1"> Xóa tất cả</a></p>
                 <div style="clear: both;"></div>
                 <?php
-                if (isset($_SESSION['dangky'])) {
+                if (isset($_SESSION['dangnhap'])) {
                 ?>
                     <p><a href="index?quanly=thanhtoan">Đặt hàng</a></p>
                 <?php
                 } else {
                 ?>
-                    <p><a href="index?quanly=dangky">Đăng ký để đặt hàng</a></p>
+                    <p><a href="dangnhap.php">Đăng nhập để đặt hàng</a></p>
                 <?php
                 }
                 ?>
