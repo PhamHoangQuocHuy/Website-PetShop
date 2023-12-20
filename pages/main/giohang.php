@@ -53,7 +53,7 @@ if (isset($_SESSION['cart'])) {
                 <?php
                 if (isset($_SESSION['dangnhap'])) {
                 ?>
-                    <p><a href="index?quanly=thanhtoan">Đặt hàng</a></p>
+                    <p><a class="btn btn-info" href="pages/main/thanhtoan.php">Đặt hàng</a></p>
                 <?php
                 } else {
                 ?>
