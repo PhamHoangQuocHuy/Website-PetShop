@@ -26,7 +26,7 @@ body {
 }
 input.themgiohang{
     border: none;
-    background-color: #00ff80;
+    background-color: #E4E7E9;
     color: #fff;
     padding: 12px;
     font-size: 15px;
@@ -42,17 +42,19 @@ input.themgiohang{
 }
 
 .menu {
-    border: 1px solid #1aff8c;
+    border: 1px solid #E4E7E9;
     height: 50px;
     width: 100%;
-    background-color: #00e6ac;
+    background-color: #E4E7E9;
 }
 
 ul.list_menu {
-    padding-left: 155px;
+    padding-left: 50px;
     margin: 0px;
+    width: auto;
     list-style: none;
     line-height: 10px;
+    
 }
 
 ul.list_menu li a {
@@ -61,8 +63,8 @@ ul.list_menu li a {
     color: black;
 }
 
-ul.list_menu li:hover {
-    background: pink;
+ul.list_menu :hover {
+    background: #767C7C;
 }
 
 ul.list_menu li {
@@ -72,7 +74,7 @@ ul.list_menu li {
 }
 
 #main {
-    border: 1px solid #00ff80;
+    border: 1px solid #E4E7E9;
     height: auto;
     width: 100%;
 }

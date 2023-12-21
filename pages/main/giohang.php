@@ -1,7 +1,7 @@
 <h3 class="title">GIỎ HÀNG</h3>
 <?php
     if(isset($_SESSION['dangnhap'])){
-        echo 'Xin chào: '.'<span style="color:red">'.$_SESSION['dangnhap'].'</span>';
+        echo 'Xin chào: '.'<strong><span style="color:red">'.$_SESSION['dangnhap'].'</strong></span>';
     }
 ?>
 <?php
@@ -47,7 +47,7 @@ if (isset($_SESSION['cart'])) {
         ?>
         <tr>
             <td colspan="8">
-                <p style="float: left; color: red; font-size: 20px;">Tổng tiền: <?php echo number_format($tongtien, 0, ',', '.') . 'vnđ'; ?></p>
+                <p style="float: left; color: red; font-size: 20px;"><strong> Tổng tiền: <?php echo number_format($tongtien, 0, ',', '.') . 'vnđ'; ?></strong></p>
                 <p class="btn btn-danger" style="float: right;"><a href="pages/main/themgiohang.php?xoatatca=1"> Xóa tất cả</a></p>
                 <div style="clear: both;"></div>
                 <?php

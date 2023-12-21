@@ -20,7 +20,7 @@ if (isset($_POST['dangnhap'])) {
             header("Location: index.php");
         }
     } else {
-        echo "Tài khoản không hợp lệ!";
+        echo "Tài khoản hoặc mật khẩu không hợp lệ!";
     }
 }
 ?>
@@ -59,7 +59,7 @@ if (isset($_POST['dangnhap'])) {
 <body>
     <div class="wrapper-login">
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" autocomplete="off" method="post">
-            <table border="1" class="table-login" style="text-align: center; border-collapse: collapse; background-color: #cdc5bf;">
+            <table border="1" class="table-login" style="text-align: center; border-collapse: collapse;">
                 <tr>
                     <td colspan="2">
                         <h2><i class="bi bi-person-circle text-info"></i> ĐĂNG NHẬP</h2>

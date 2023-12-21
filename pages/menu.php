@@ -25,6 +25,7 @@ if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
         if (isset($_SESSION['dangnhap'])) {
         ?>
             <li><a href="index.php?dangxuat=1">Đăng xuất</a></li>
+            <li><a href="index.php?quanly=thaydoimatkhau">Thay đổi mật khẩu</a></li>
         <?php
         } else {
         ?>
@@ -34,7 +35,7 @@ if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
         ?>
     </ul>
     <p>
-    <form action="index.php?quanly=timkiem" method="POST">
+    <form action="index.php?quanly=timkiem" method="POST" style="float: right;">
         <input type="text" placeholder="Tìm kiếm" name="tukhoa" style="border-radius: 30px;background-color:#B0E0E6;" >
         <input type="submit" name="timkiem" value="Tìm kiếm" style="border-radius: 30px;">
     </form>

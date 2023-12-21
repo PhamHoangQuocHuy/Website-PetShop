@@ -29,6 +29,8 @@
             include("main/thanhtoan.php");
         }elseif($tam=='camon'){
             include("main/camon.php");
+        }elseif($tam=='thaydoimatkhau'){
+            include("main/thaydoimatkhau.php");
         }else{
             include("main/index.php");
         }
