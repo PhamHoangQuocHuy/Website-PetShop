@@ -5,7 +5,7 @@ $query_lietke_danhmucsp = mysqli_query($mysqli, $sql_lietke_danhmucsp);
 <p>Liệt kê danh mục sản phẩm</p>
 <table style="width: 100%" border="1" style="border-collapse: collapse;">
 
-    <tr>
+    <tr style="text-align: center;">
         <th>ID</th>
         <th>TÊN DANH MỤC</th>
         <th>QUẢN LÝ</th>
@@ -18,7 +18,7 @@ $query_lietke_danhmucsp = mysqli_query($mysqli, $sql_lietke_danhmucsp);
     
     ?>
 
-    <tr>
+    <tr style="text-align: center;">
         <td><?php echo $i ?></td>
         <td><?php echo $row['tendanhmuc'] ?></td>
         <td>

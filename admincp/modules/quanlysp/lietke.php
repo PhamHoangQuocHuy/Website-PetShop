@@ -5,7 +5,7 @@ $query_lietke_sp = mysqli_query($mysqli, $sql_lietke_sp);
 <p>Liệt kê sản phẩm</p>
 <table style="width: 100%" border="1" style="border-collapse: collapse;">
 
-    <tr>
+    <tr style="text-align: center;">
         <th>ID</th>
         <th>TÊN SẢN PHẨM</th>
         <th>HÌNH ẢNH</th>
@@ -25,7 +25,7 @@ $query_lietke_sp = mysqli_query($mysqli, $sql_lietke_sp);
 
     ?>
 
-        <tr>
+        <tr style="text-align: center;"> 
             <td><?php echo $i ?></td>
             <td><?php echo $row['tensanpham'] ?></td>
             <td><img src="modules/quanlysp/uploads/<?php echo $row['hinhanh'] ?>" width="150px" height="150px"> </td>

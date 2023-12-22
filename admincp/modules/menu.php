@@ -5,5 +5,5 @@
     <li><a href="index.php?action=quanlydichvu&query=them">Quản lý dịch vụ</a></li>
     <li><a href="index.php?action=quanlytaikhoan&query=them">Quản lý tài khoản</a></li>
     <li><a href="index.php?action=quanlytintuc&query=them">Quản lý tin tức</a></li>
-    <li><a href="index.php?action=quanlydonhang&query=them">Quản lý đơn hàng</a></li>
+    <li><a href="index.php?action=quanlydonhang&query=lietke">Quản lý đơn hàng</a></li>
 </ul>

@@ -24,7 +24,7 @@ if(isset($_SESSION['user'])){
         $gia = $value['gia'];
         $soluong = $value['soluong'];
         $code_cart = generateRandomString(10);
-        $insert_cart_item = "INSERT INTO tbl_cart(id_khachhang, name,id_sanpham,code_cart, gia, soluong,thoigianmua,cart_status) 
+        $insert_cart_item = "INSERT INTO tbl_cart(id_khachhang, name,id_sanpham,code_cart, gia, soluongmua,thoigianmua,cart_status) 
         VALUES ('$id_khachhang','$name','$id_sanpham', '$code_cart', '$gia','$soluong',NOW(),1)";
         $result = mysqli_query($mysqli,$insert_cart_item);
         if(!$result){

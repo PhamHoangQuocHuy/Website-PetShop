@@ -64,7 +64,7 @@ ul.list_menu li a {
 }
 
 ul.list_menu :hover {
-    background: #767C7C;
+    background: pink;
 }
 
 ul.list_menu li {

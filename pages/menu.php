@@ -12,6 +12,7 @@ if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
         <li><a href="index.php">Trang chủ</a></li>
         <li><a href="index.php?quanly=gioithieu">Giới thiệu</a></li>
         <li><a href="index.php?quanly=giohang">Giỏ hàng</a></li>
+
         <?php
         while ($row_danhmuc = mysqli_fetch_array($query_danhmuc)) {
         ?>
@@ -19,6 +20,7 @@ if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
         <?php
         }
         ?>
+        
         <li><a href="index.php?quanly=dichvu">Dịch vụ</a></li>
         <li><a href="index.php?quanly=tintuc">Tin tức</a></li>
         <?php
