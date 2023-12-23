@@ -31,6 +31,8 @@
             include("main/camon.php");
         }elseif($tam=='thaydoimatkhau'){
             include("main/thaydoimatkhau.php");
+        }elseif($tam=='quenmatkhau'){
+            include("main/quenmatkhau.php");
         }else{
             include("main/index.php");
         }

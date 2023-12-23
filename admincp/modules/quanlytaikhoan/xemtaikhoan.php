@@ -1,7 +1,7 @@
 <p>Xem tài khoản</p>
 <?php
 $id = $_GET['id'];
-$sql_lietke_dh = "SELECT *FROM tbl_user WHERE tbl_user.id_user = '".$id."' ORDER BY tbl_user.id_user ASC";
+$sql_lietke_dh = "SELECT *FROM tbl_user WHERE tbl_user.id_user = '" . $id . "' ORDER BY tbl_user.id_user ASC";
 $query_lietke_dh = mysqli_query($mysqli, $sql_lietke_dh);
 ?>
 <table style="width: 100%" border="1" style="border-collapse: collapse;">
@@ -12,11 +12,12 @@ $query_lietke_dh = mysqli_query($mysqli, $sql_lietke_dh);
         <th>TÊN ĐĂNG NHẬP</th>
         <th>MẬT KHẨU</th>
         <th>CHỨC VỤ</th>
+        <th>QUẢN LÝ</th>
     </tr>
 
     <?php
     $i = 0;
-    
+
     while ($row = mysqli_fetch_array($query_lietke_dh)) {
         $i++;
     ?>
@@ -26,7 +27,15 @@ $query_lietke_dh = mysqli_query($mysqli, $sql_lietke_dh);
             <td><?php echo $row['name'] ?></td>
             <td><?php echo $row['username'] ?></td>
             <td><?php echo  $row['password'] ?></td>
-            <td><?php if ($row['role']==1){echo 'ADMIN';}else{echo 'USER';} ?></td>
+            <td><?php if ($row['role'] == 1) {
+                    echo 'ADMIN';
+                } else {
+                    echo 'USER';
+                } ?></td>
+            <td>
+                <a class="btn btn-danger" href="modules/quanlytaikhoan/xuly.php?iduser=<?php echo $row['id_user'] ?>"> XÓA</a>
+            </td>
+
         </tr>
     <?php
     }

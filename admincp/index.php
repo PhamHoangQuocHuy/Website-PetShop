@@ -31,48 +31,6 @@ if (!isset($_SESSION['dangnhap'])) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
-    <script type="text/javascript">
-        new Morris.Chart({
-            // ID of the element in which to draw the chart.
-            element: 'chart',
-            // Chart data records -- each entry in this array corresponds to a point on
-            // the chart.
-            data: [{
-                    year: '2008',
-                    order: 5,
-                    sales: 2000000,
-                    quantity: 10
-                },
-                {
-                    year: '2009',
-                    order: 5,
-                    sales: 3000000,
-                    quantity: 15
-                },
-                {
-                    year: '2010',
-                    order: 5,
-                    sales: 4000000,
-                    quantity: 10
-                },
-                {
-                    year: '2011',
-                    order: 5,
-                    sales: 5000000,
-                    quantity: 20
-                },
-                {
-                    year: '2012',
-                    order: 5,
-                    sales: 6000000,
-                    quantity: 25
-                }
-            ],
-            xkey: 'year',
-            ykeys: ['order', 'sales', 'quantity'],
-            labels: ['Đơn hàng', 'Doanh thu', 'Số lượng bán ra']
-        });
-    </script>
 </body>
 
 </html>

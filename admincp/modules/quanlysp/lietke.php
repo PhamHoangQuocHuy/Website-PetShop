@@ -3,6 +3,7 @@ $sql_lietke_sp = "SELECT *FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danh
 $query_lietke_sp = mysqli_query($mysqli, $sql_lietke_sp);
 ?>
 <p>Liệt kê sản phẩm</p>
+
 <table style="width: 100%" border="1" style="border-collapse: collapse;">
 
     <tr style="text-align: center;">
@@ -22,10 +23,8 @@ $query_lietke_sp = mysqli_query($mysqli, $sql_lietke_sp);
     $i = 0;
     while ($row = mysqli_fetch_array($query_lietke_sp)) {
         $i++;
-
     ?>
-
-        <tr style="text-align: center;"> 
+        <tr style="text-align: center;">
             <td><?php echo $i ?></td>
             <td><?php echo $row['tensanpham'] ?></td>
             <td><img src="modules/quanlysp/uploads/<?php echo $row['hinhanh'] ?>" width="150px" height="150px"> </td>

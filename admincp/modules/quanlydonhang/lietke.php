@@ -21,6 +21,8 @@ $query_lietke_dh = mysqli_query($mysqli, $sql_lietke_dh);
     $i = 0;
     while ($row = mysqli_fetch_array($query_lietke_dh)) {
         $i++;
+        $thoigianmua = strtotime($row['thoigianmua']);
+        $ngaydat = date('H:i:s - d/m/Y', $thoigianmua);
 
     ?>
 
@@ -39,7 +41,7 @@ $query_lietke_dh = mysqli_query($mysqli, $sql_lietke_dh);
                 }
                 ?>
             </td>
-            <td><?php echo $row['thoigianmua'] ?></td>
+            <td><?php echo $ngaydat ?></td>
             <td>
                 <a class="btn btn-info" href="index.php?action=donhang&query=xemdonhang&code=<?php echo $row['code_cart'] ?>"> Xem đơn hàng</a>
             </td>
