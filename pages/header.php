@@ -1,3 +1,3 @@
 <div class="header">
-    <img src="images/banner.jpg" width="100%" height="180px">
+    <img src="../images/banner.png" width="100%" height="350px">
 </div>

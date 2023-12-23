@@ -13,6 +13,7 @@ $query_lietke_dh = mysqli_query($mysqli, $sql_lietke_dh);
         <th>EMAIL</th>
         <th>SỐ ĐIỆN THOẠI</th>
         <th>TÌNH TRẠNG</th>
+        <th>NGÀY ĐẶT</th>
         <th>QUẢN LÝ</th>
     </tr>
 
@@ -38,6 +39,7 @@ $query_lietke_dh = mysqli_query($mysqli, $sql_lietke_dh);
                 }
                 ?>
             </td>
+            <td><?php echo $row['thoigianmua'] ?></td>
             <td>
                 <a class="btn btn-info" href="index.php?action=donhang&query=xemdonhang&code=<?php echo $row['code_cart'] ?>"> Xem đơn hàng</a>
             </td>
