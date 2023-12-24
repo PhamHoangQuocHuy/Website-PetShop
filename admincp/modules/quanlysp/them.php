@@ -1,4 +1,5 @@
-<p>THÊM SẢN PHẨM</p>
+<br><br>
+<p style="text-align: center;font-size: 30px;"><strong>THÊM SẢN PHẨM</strong></p>
 <table border="1" width="100%" style="border-collapse: collapse;">
     <form method="POST" action="modules/quanlysp/xuly.php" enctype="multipart/form-data">
         <tr>

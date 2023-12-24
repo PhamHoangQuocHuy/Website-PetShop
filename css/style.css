@@ -36,6 +36,14 @@ input.themgiohang {
     font-size: 15px;
     cursor: pointer;
 }
+input.sudungdichvu {
+    border: none;
+    background-color: #E4E7E9;
+    color: #fff;
+    padding: 12px;
+    font-size: 15px;
+    cursor: pointer;
+}
 
 .header {
     background-image: url(../images/banner.png);

@@ -1,4 +1,5 @@
-<p>THÊM DANH MỤC SẢN PHẨM</p>
+<br><br>
+<p style="font-size: 30px;"><strong>THÊM DANH MỤC SẢN PHẨM</strong></p>
 <table  border="1" width="50%" style="border-collapse: collapse;">
     <form method="POST" action="modules/quanlydanhmucsanpham/xuly.php">
         <tr>

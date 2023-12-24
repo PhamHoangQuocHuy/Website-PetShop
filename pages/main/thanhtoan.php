@@ -1,6 +1,4 @@
 <?php
-
-
 session_start();
 include('../../admincp/config/config.php');
 $id_khachhang = $_SESSION['user']['id_user'];

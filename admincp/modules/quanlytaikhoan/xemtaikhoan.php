@@ -1,4 +1,5 @@
-<p>Xem tài khoản</p>
+<br><br><br>
+<p style="text-align: center;font-size: 30px;"><strong> Xem tài khoản</strong></p>
 <?php
 $id = $_GET['id'];
 $sql_lietke_dh = "SELECT *FROM tbl_user WHERE tbl_user.id_user = '" . $id . "' ORDER BY tbl_user.id_user ASC";

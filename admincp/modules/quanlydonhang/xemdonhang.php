@@ -1,4 +1,5 @@
-<p>Xem đơn hàng</p>
+<br><br>
+<p style="text-align: center;font-size: 30px;"><strong>Xem đơn hàng</strong></p>
 <?php
 $code = $_GET['code'];
 $sql_lietke_dh = "SELECT *FROM tbl_cart,tbl_sanpham WHERE tbl_cart.id_sanpham = tbl_sanpham.id_sanpham 

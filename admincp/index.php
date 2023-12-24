@@ -17,7 +17,7 @@ if (!isset($_SESSION['dangnhap'])) {
 </head>
 
 <body>
-    <h3 class="title">Welcome to AdminCP</h3>
+    <h3 class="title">Welcome to AdminCP <img src="" alt="Ảnh GIF"></h3>
     <div class="wrapper">
         <?php
         include("config/config.php");

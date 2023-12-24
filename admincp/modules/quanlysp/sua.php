@@ -2,13 +2,13 @@
 $sql_sua_sp = "SELECT * FROM tbl_sanpham WHERE id_sanpham = '$_GET[idsanpham]' LIMIT 1";
 $query_sua_sp = mysqli_query($mysqli, $sql_sua_sp);
 ?>
-
-<p>SỬA SẢN PHẨM</p>
+<br><br>
+<p style="text-align: center;font-size: 30px;"><strong>SỬA SẢN PHẨM</strong></p>
 <table border="1" width="100%" style="border-collapse: collapse;">
     <?php
     while ($row = mysqli_fetch_array($query_sua_sp)) {
     ?>
-        <form clas method="POST" action="modules/quanlysp/xuly.php?idsanpham=<?php echo $row['id_sanpham'] ?>" enctype="multipart/form-data">
+        <form method="POST" action="modules/quanlysp/xuly.php?idsanpham=<?php echo $row['id_sanpham'] ?>" enctype="multipart/form-data">
             <tr>
                 <td>MÃ SẢN PHẨM</td>
                 <td><input type="text" value="<?php echo $row['masanpham'] ?>" name="masanpham"></td>
@@ -88,7 +88,7 @@ $query_sua_sp = mysqli_query($mysqli, $sql_sua_sp);
             </tr>
 
             <tr>
-                <td colspan="2"><input type="submit" name="suasanpham" value="SỬA SẢN PHẨM"></td>
+                <td colspan="2"><input class="btn btn-info" type="submit" name="suasanpham" value="SỬA SẢN PHẨM"></td>
             </tr>
         </form>
     <?php

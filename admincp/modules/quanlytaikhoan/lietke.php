@@ -1,4 +1,5 @@
-<p>Liệt kê đơn hàng</p>
+<br><br>
+<p style="text-align: center;font-size: 30px;"><strong> Liệt kê tài khoản</strong></p>
 <?php
 $sql_lietke_tk = "SELECT *FROM tbl_user ORDER BY id_user ASC";
 $query_lietke_tk = mysqli_query($mysqli, $sql_lietke_tk);
@@ -6,12 +7,12 @@ $query_lietke_tk = mysqli_query($mysqli, $sql_lietke_tk);
 <table style="width: 100%" border="1" style="border-collapse: collapse;">
 
     <tr style="text-align: center;">
-        <th>ID</th>
-        <th>TÊN NGƯỜI DÙNG</th>
-        <th>EMAIL</th>
-        <th>ĐỊA CHỈ</th>
-        <th>SỐ ĐIỆN THOẠI</th>
-        <th>QUẢN LÝ</th>
+        <th class="th_edit">ID</th>
+        <th class="th_edit">TÊN NGƯỜI DÙNG</th>
+        <th class="th_edit">EMAIL</th>
+        <th class="th_edit">ĐỊA CHỈ</th>
+        <th class="th_edit">SỐ ĐIỆN THOẠI</th>
+        <th class="th_edit">QUẢN LÝ</th>
     </tr>
 
     <?php

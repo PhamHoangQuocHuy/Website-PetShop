@@ -1,19 +1,42 @@
+/* CSS mới cho menu admin */
 ul.admincp_list {
     padding: 0;
     margin: 0;
     list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
 }
-ul.admincp_list li{
-    float: left;
-    margin: 5px;
+
+ul.admincp_list li {
+    margin: 0 15px;
 }
-.clear{
+
+ul.admincp_list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+ul.admincp_list li a:hover {
+    color: pink;
+}
+
+.clear {
     clear: both;
 }
-.title{
+
+.title {
     text-align: center;
     font-size: 50px;
 }
+
 .wrapper {
     border: 1px solid #000;
     height: auto;
@@ -21,4 +44,7 @@ ul.admincp_list li{
     margin: 0 auto;
 }
 
-
+.th_edit {
+    background-color: #000;
+    color: white;
+}
