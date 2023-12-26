@@ -44,7 +44,7 @@ $query_lietke_dh = mysqli_query($mysqli, $sql_lietke_dh);
             </td>
             <td><?php echo $ngaydat ?></td>
             <td>
-                <a class="btn btn-info" href="index.php?action=donhang&query=xemdonhang&code=<?php echo $row['code_cart'] ?>"> Xem đơn hàng</a>
+                <a class="btn btn-info" href="index.php?action=donhang&query=xemdonhang&code=<?php echo $row['code_cart'] ?>"> Xem chi tiết đơn hàng</a>
             </td>
         </tr>
     <?php

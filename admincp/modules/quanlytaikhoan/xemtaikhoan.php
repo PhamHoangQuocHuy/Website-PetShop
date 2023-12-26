@@ -8,12 +8,12 @@ $query_lietke_dh = mysqli_query($mysqli, $sql_lietke_dh);
 <table style="width: 100%" border="1" style="border-collapse: collapse;">
 
     <tr style="text-align: center;">
-        <th>ID</th>
-        <th>TÊN NGƯỜI DÙNG</th>
-        <th>TÊN ĐĂNG NHẬP</th>
-        <th>MẬT KHẨU</th>
-        <th>CHỨC VỤ</th>
-        <th>QUẢN LÝ</th>
+        <th class="th_edit">ID</th>
+        <th class="th_edit">TÊN NGƯỜI DÙNG</th>
+        <th class="th_edit">TÊN ĐĂNG NHẬP</th>
+        <th class="th_edit">MẬT KHẨU</th>
+        <th class="th_edit">CHỨC VỤ</th>
+        <th class="th_edit">QUẢN LÝ</th>
     </tr>
 
     <?php

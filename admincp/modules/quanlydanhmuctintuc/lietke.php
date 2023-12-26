@@ -24,7 +24,7 @@ $query_lietke_danhmuctintuc = mysqli_query($mysqli, $sql_lietke_danhmuctintuc);
         <td><?php echo $row['tendanhmuctintuc'] ?></td>
         <td>
             <a class="btn btn-danger" href="modules/quanlydanhmuctintuc/xuly.php?iddanhmuctintuc=<?php echo $row['id_danhmuctintuc'] ?>"> XÓA</a> | 
-            <a class="btn btn-info"href="?action=quanlydanhmucsanpham&query=sua&iddanhmuctintuc=<?php echo $row['id_danhmuctintuc'] ?>">SỬA</a>
+            <a class="btn btn-info"href="?action=quanlydanhmuctintuc&query=sua&iddanhmuctintuc=<?php echo $row['id_danhmuctintuc'] ?>">SỬA</a>
         </td>
     </tr>
     <?php

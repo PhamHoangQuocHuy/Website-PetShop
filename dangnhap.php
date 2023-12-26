@@ -76,6 +76,9 @@ if (isset($_POST['dangnhap'])) {
                 <tr>
                     <td colspan="2"><input type="submit" name="dangnhap" value="Đăng nhập" class="btn btn-success"> </td>
                 </tr>
+                <tr>
+                    <td colspan="2">Chưa có tài khoản ư ? Vậy hãy <a href="index.php?quanly=dangki"> đăng kí </a></td>
+                </tr>
             </table>
         </form>
     </div>

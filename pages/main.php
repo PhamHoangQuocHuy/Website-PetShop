@@ -48,9 +48,14 @@
         }elseif($tam=='camon'){
             include("main/camon.php");
             
-            // doi mat khau
-        }elseif($tam=='thaydoimatkhau'){
-            include("main/thaydoimatkhau.php");
+            // su dung dich vu
+        }elseif($tam=='sudungdichvu'){
+            include("main/sudungdichvu.php");
+
+            //thanh toan dich vu
+        }elseif($tam=='thanhtoandichvu'){
+            include("main/thanhtoandichvu.php");
+
         }else{
             include("main/index.php");
         }

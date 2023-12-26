@@ -9,12 +9,13 @@ $query_lietke_dh = mysqli_query($mysqli, $sql_lietke_dh);
 <table style="width: 100%" border="1" style="border-collapse: collapse;">
 
     <tr style="text-align: center;">
-        <th>ID</th>
-        <th>MÃ ĐƠN HÀNG</th>
-        <th>TÊN SẢN PHẨM</th>
-        <th>SỐ LƯỢNG</th>
-        <th>GIÁ</th>
-        <th>THÀNH TIỀN</th>
+        <th class="th_edit">ID</th>
+        <th class="th_edit">MÃ ĐƠN HÀNG</th>
+        <th class="th_edit">TÊN SẢN PHẨM</th>
+        <th class="th_edit">SỐ LƯỢNG</th>
+        <th class="th_edit">GIÁ</th>
+        <th class="th_edit">THÀNH TIỀN</th>
+        <th class="th_edit">QUẢN LÝ</th>
     </tr>
 
     <?php
@@ -34,14 +35,16 @@ $query_lietke_dh = mysqli_query($mysqli, $sql_lietke_dh);
             <td><?php echo number_format($row['gia'],0,',','.').'vnđ'  ?></td>
             <td><?php echo number_format($thanhtien,0,',','.').'vnđ' ?></td>
             <td>
+                <a class="btn btn-danger" href="modules/quanlydonhang/xuly.php?idcart=<?php echo $row['id_cart'] ?>"> XÓA</a>
             </td>
         </tr>
     <?php
     }
     ?>
     <tr>
-        <td colspan="6">
+        <td colspan="7">
             <p style="color: red; float: right;"><strong> Tổng tiền: <?php echo number_format($tongtien,0,',','.').'vnđ' ?></strong></p>
         </td>
     </tr>
+    
 </table>

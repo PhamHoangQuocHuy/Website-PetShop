@@ -57,7 +57,7 @@ if (isset($_SESSION['cart'])) {
                 <?php
                 } else {
                 ?>
-                    <p><a href="dangnhap.php">Đăng nhập để đặt hàng</a></p>
+                    <p><a href="dangnhap.php"><strong>Đăng nhập để đặt hàng</strong></a></p>
                 <?php
                 }
                 ?>

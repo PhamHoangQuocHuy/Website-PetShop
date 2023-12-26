@@ -62,6 +62,13 @@
         include("modules/quanlytaikhoan/lietke.php");
     } elseif ($tam == 'taikhoan' && $query == 'xemtaikhoan') {
         include("modules/quanlytaikhoan/xemtaikhoan.php");
+
+        // quan ly lich hen
+    } elseif ($tam == 'quanlylichhen' && $query == 'lietke') {
+        include("modules/quanlylichhen/lietke.php");
+    } elseif ($tam == 'lichhen' && $query == 'xemlichhen') {
+        include("modules/quanlylichhen/xemlichhen.php");
+
     } else {
         include("modules/dashboard.php");
     }
