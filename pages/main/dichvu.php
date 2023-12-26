@@ -18,16 +18,7 @@ while ($row_chitiet = mysqli_fetch_array($query_chitiet)) {
                 <?php
                 if (isset($_SESSION['dangnhap'])) {
                 ?>
-                    <p><input class="btn btn-success" name="sudungdichvu" class="sudungdichvu" type="submit" value="SỬ DỤNG DỊCH VỤ"></p>
-                    <?php
-                    if (isset($_POST['sudungdichvu'])) {
-                        $_SESSION['sd_dichvu'] = [
-                            'id_dichvu' => $row_chitiet['id_dichvu'],
-                            'tendichvu' => $row_chitiet['tendichvu'],
-                            'giadichvu' => $row_chitiet['giadichvu'],
-                        ];
-                    }
-                    ?>
+                    <p><input class="btn btn-success" name="sudungdichvu" type="submit" value="SỬ DỤNG DỊCH VỤ"></p>
                 <?php
                 } else {
                 ?>

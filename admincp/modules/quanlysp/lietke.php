@@ -3,26 +3,29 @@ $sql_lietke_sp = "SELECT *FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danh
 $query_lietke_sp = mysqli_query($mysqli, $sql_lietke_sp);
 
 // Loc theo danh muc sp
-$sql_lietke_theo_dmsp = "SELECT *FROM tbl_danhmuc";
-$query_lietke_theo_dmsp = mysqli_query($mysqli,$sql_lietke_theo_dmsp);
-$sql = "SELECT *FROM tbl_sanpham JOIN tbl_danhmuc WHERE tbl_sanpham.id_danhmuc = tbl_danhmuc.id_danhmuc";
-if(isset($_POST['filter'])){
-    $selected_id_dmsp = $_POST['id_danhmuc'];
-    if(!empty($selected_id_dmsp)){
-        $sql_lietke_theo_dmsp= "WHERE tbl_danhmuc.id_danhmuc =$selected_id_dmsp ";
+$sql_lietke_loaixe = "SELECT * FROM tbl_danhmuc";
+$query_lietke_loaixe = mysqli_query($mysqli, $sql_lietke_loaixe);
+
+
+
+$sql_lietke_xe = "SELECT * FROM tbl_sanpham JOIN tbl_danhmuc ON tbl_sanpham.id_danhmuc = tbl_danhmuc.id_danhmuc";
+
+if (isset($_POST['filter'])) {
+    $selected_id_cate = $_POST['id_danhmuc'];
+    if (!empty($selected_id_cate)) {
+        $sql_lietke_xe .= " WHERE tbl_danhmuc.id_danhmuc = $selected_id_cate";
     }
 }
-$query_lietke = mysqli_query($mysqli,$sql);
-?>
+
+$query_lietke_xe = mysqli_query($mysqli, $sql_lietke_xe); ?>
 <br><br><br>
 <!-- form loc sp -->
-<form action="" method="">
-    <label for="id_danhmuc">Chọn danh mục</label>
+<form action="" method="post">
+    <label for="id_danhmuc">Chọn danh mục:</label>
     <select name="id_danhmuc" id="id_danhmuc">
         <option value="">Tất cả</option>
-        <?php
-        while ($row_loaisp = mysqli_fetch_assoc($query_lietke_theo_dmsp)) { ?>
-            <option value="<?php echo $row_loaisp['id_danhmuc']; ?>"><?php echo $row_loaisp['tendanhmuc']; ?></option>
+        <?php while ($row_loaixe = mysqli_fetch_assoc($query_lietke_loaixe)) { ?>
+            <option value="<?php echo $row_loaixe['id_danhmuc']; ?>"><?php echo $row_loaixe['tendanhmuc']; ?></option>
         <?php } ?>
     </select>
     <input type="submit" name="filter" value="Lọc">
@@ -47,14 +50,14 @@ $query_lietke = mysqli_query($mysqli,$sql);
 
     <?php
     $i = 0;
-    while ($row = mysqli_fetch_array($query_lietke_sp)) {
+    while ($row = mysqli_fetch_array($query_lietke_xe)) {
         $i++;
     ?>
         <tr style="text-align: center;">
             <td><?php echo $i ?></td>
             <td><?php echo $row['tensanpham'] ?></td>
             <td><img src="modules/quanlysp/uploads/<?php echo $row['hinhanh'] ?>" width="150px" height="150px"> </td>
-            <td><?php echo number_format($row['gia'], 0, ',', '.').'vnđ' ?></td>
+            <td><?php echo number_format($row['gia'], 0, ',', '.') . 'vnđ' ?></td>
             <td><?php echo $row['soluong'] ?></td>
             <td><?php echo $row['tendanhmuc'] ?></td>
             <td><?php echo $row['masanpham'] ?></td>

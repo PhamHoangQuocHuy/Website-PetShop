@@ -16,7 +16,6 @@ function generateRandomString($length = 8) {
     return $randomString;
 }
 
-// Tạo mã đơn cho khách hàng
 if(isset($_SESSION['user'])){
     //them vao gio hang
     foreach($_SESSION['cart'] as $key => $value){
